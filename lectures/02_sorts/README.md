@@ -13,3 +13,6 @@ pipenv install
 ```
 pipenv run jupyter lab   
 ```
+
+
+Python implementation os list sort (in C): https://github.com/python/cpython/blob/main/Objects/listobject.c
