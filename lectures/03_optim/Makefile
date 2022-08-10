@@ -5,6 +5,7 @@ TESTS := $(shell find . -name 'tests_*.py')
 MAIN_NOTEBOOK := plot_benchs.ipynb
 BENCHMARK := outputs/pyperf_measurements.json
 BENCHMARK_PAR := outputs/pyperf_measurements_par.json
+BENCHMARK_DIFF := outputs/pyperf_measurements_diff.json
 OUTPUT_FILES := $(shell find . -name 'outputs/*.pdf')
 
 # Install software dependencies

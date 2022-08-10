@@ -9,7 +9,7 @@ NB_BOXES = 999
 NB_QUERIES: list[int] = [5000]
 QUERY_LENGTHS: list[int] = [50, 100, 200, 300, 400, 500]
 
-CANDIDATES: list[CountingStrategy] = [Naive(), Cached()]
+CANDIDATES: list[CountingStrategy] = [Naive(), Cached(), OneLiner()]
 NB_CPUS = multiprocessing.cpu_count()
 POOLED = [PooledNaive(x) for x in range(1, NB_CPUS + 1)]
 CANDIDATES.extend(POOLED)
